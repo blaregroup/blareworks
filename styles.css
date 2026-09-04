@@ -12,7 +12,7 @@
   --radius: 18px;
   --wrap: 1120px;
   --font: "DM Sans", system-ui, sans-serif;
-  --display: "Instrument Serif", Georgia, serif;
+  --display: "DM Sans", system-ui, sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -112,9 +112,9 @@ a:hover { color: #f0c65a; }
 }
 .hero h1, .section h2, .contact h2 {
   font-family: var(--display);
-  font-weight: 400;
-  letter-spacing: -0.02em;
-  line-height: 1.05;
+  font-weight: 750;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
   margin: 0;
 }
 .hero h1 { font-size: clamp(3rem, 7vw, 5.2rem); max-width: 10ch; }
@@ -185,7 +185,7 @@ a:hover { color: #f0c65a; }
   letter-spacing: .12em; text-transform: uppercase;
 }
 .panel-main p {
-  margin: 0; font-family: var(--display); font-size: 1.7rem; line-height: 1.15;
+  margin: 0; font-family: var(--display); font-size: 1.45rem; font-weight: 700; line-height: 1.2;
 }
 .panel-secondary {
   display: grid; grid-template-columns: auto 1fr; gap: .85rem; align-items: center;
