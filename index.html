@@ -3,73 +3,226 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Blare Contractor Group | blareworks.com</title>
-  <meta name="description" content="Blare Contractor Group — professional contracting for commercial and residential projects." />
+  <title>Blare Contractor Group | Built Clean. Delivered Straight.</title>
+  <meta name="description" content="Blare Contractor Group — general contracting, renovations, and specialty builds. Clear scopes, clean job sites, straight communication." />
+  <meta property="og:title" content="Blare Contractor Group" />
+  <meta property="og:description" content="Built clean. Delivered straight." />
+  <meta property="og:url" content="https://blareworks.com/" />
+  <meta name="theme-color" content="#0c0f0d" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="logo" href="/">BLARE</a>
-      <nav>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="wrap bar">
+      <a class="brand" href="#top" aria-label="Blare Contractor Group home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <strong>BLARE</strong>
+          <span>Contractor Group</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">Menu</span>
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" data-nav>
         <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#work">Work</a>
         <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#contact">Get a walkthrough</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero">
-      <div class="wrap">
-        <p class="eyebrow">Blare Contractor Group</p>
-        <h1>Built right. Done clean.</h1>
-        <p class="lede">General contracting and specialty builds for owners who want a crew that shows up, communicates, and finishes.</p>
-        <a class="btn" href="#contact">Get a walkthrough</a>
+      <div class="hero-grid wrap">
+        <div class="hero-copy">
+          <p class="eyebrow">Blare Contractor Group · blareworks.com</p>
+          <h1>Built clean.<br /><em>Delivered straight.</em></h1>
+          <p class="lede">We’re a contractor-led crew for owners who want clear scopes, tight scheduling, and a job site that looks like someone gives a damn.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Start a project</a>
+            <a class="btn btn-ghost" href="#services">See what we do</a>
+          </div>
+          <dl class="hero-stats">
+            <div>
+              <dt>Focus</dt>
+              <dd>GC · renovations · specialty</dd>
+            </div>
+            <div>
+              <dt>Style</dt>
+              <dd>Straight talk. Clean finish.</dd>
+            </div>
+            <div>
+              <dt>Contact</dt>
+              <dd><a href="mailto:blareworksllc@gmail.com">blareworksllc@gmail.com</a></dd>
+            </div>
+          </dl>
+        </div>
+        <aside class="hero-panel" aria-hidden="true">
+          <div class="panel-card panel-main">
+            <span class="panel-kicker">Job standard</span>
+            <p>Show up. Protect the space. Hit the punch list.</p>
+          </div>
+          <div class="panel-card panel-secondary">
+            <span>01</span>
+            <p>Scope locked before demo day</p>
+          </div>
+          <div class="panel-card panel-secondary">
+            <span>02</span>
+            <p>Weekly updates without chasing</p>
+          </div>
+          <div class="panel-card panel-secondary">
+            <span>03</span>
+            <p>Walkthrough you can trust</p>
+          </div>
+        </aside>
       </div>
     </section>
 
     <section id="services" class="section">
       <div class="wrap">
-        <h2>Services</h2>
-        <div class="grid">
-          <article>
+        <div class="section-head">
+          <p class="eyebrow">Services</p>
+          <h2>What we take on</h2>
+          <p class="section-lede">From full general contracting to sharp specialty scopes — same standard either way.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
             <h3>General contracting</h3>
-            <p>Coordination, scheduling, and execution from scope through punch list.</p>
+            <p>End-to-end delivery: trades, schedule, materials, and field coordination so you’re not managing five crews yourself.</p>
+            <ul>
+              <li>Commercial &amp; residential</li>
+              <li>Tenant improvements</li>
+              <li>Build-outs &amp; additions</li>
+            </ul>
           </article>
-          <article>
+          <article class="card">
             <h3>Renovations</h3>
-            <p>Interiors, tenant improvements, and remodel work with clear change control.</p>
+            <p>Interiors that have to keep working while we rebuild them — kitchens, baths, offices, and phased remodel work.</p>
+            <ul>
+              <li>Occupied-space discipline</li>
+              <li>Change-order clarity</li>
+              <li>Finish-level detail</li>
+            </ul>
           </article>
-          <article>
+          <article class="card">
             <h3>Specialty builds</h3>
-            <p>Feature walls, finishes, and custom scopes that need a sharp eye on detail.</p>
+            <p>Feature walls, custom finishes, and scopes where the last 10% of craft is the whole job.</p>
+            <ul>
+              <li>Accent &amp; media walls</li>
+              <li>Custom millwork installs</li>
+              <li>High-visibility finishes</li>
+            </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section muted">
-      <div class="wrap narrow">
-        <h2>About</h2>
-        <p>Blare Contractor Group is a contractor-led team focused on reliable delivery and straight talk. More project photos, licenses, and service areas coming soon on this site.</p>
+    <section id="process" class="section section-alt">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Process</p>
+          <h2>How a Blare job runs</h2>
+        </div>
+        <ol class="steps">
+          <li>
+            <h3>Walkthrough</h3>
+            <p>We look at the space, constraints, and what “done” actually means for you.</p>
+          </li>
+          <li>
+            <h3>Scope &amp; price</h3>
+            <p>Clear line items. No mystery allowances. Options when they matter.</p>
+          </li>
+          <li>
+            <h3>Build</h3>
+            <p>Scheduled work, protected surfaces, and updates you don’t have to hunt for.</p>
+          </li>
+          <li>
+            <h3>Handoff</h3>
+            <p>Punch list closed, walkthrough complete, site left clean.</p>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <section id="contact" class="section">
-      <div class="wrap narrow">
-        <h2>Contact</h2>
-        <p>Ready to talk through a job?</p>
-        <p><a href="mailto:blareworksllc@gmail.com">blareworksllc@gmail.com</a></p>
+    <section id="work" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Work</p>
+          <h2>Project types we chase</h2>
+          <p class="section-lede">Photo gallery coming soon. Until then, here’s the work we’re built for.</p>
+        </div>
+        <div class="work-grid">
+          <article>
+            <h3>Owner-occupied renovations</h3>
+            <p>Jobs that can’t trash the rest of the house or shop while we work.</p>
+          </article>
+          <article>
+            <h3>Light commercial</h3>
+            <p>Offices, suites, and small business spaces that need a sharp turn.</p>
+          </article>
+          <article>
+            <h3>Feature finishes</h3>
+            <p>Walls and details clients notice first — and judge hardest.</p>
+          </article>
+          <article>
+            <h3>Punch-heavy closeouts</h3>
+            <p>When another crew left a mess and you need someone to finish it right.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section-alt">
+      <div class="wrap about-grid">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>Contractor-led. Not brochure-led.</h2>
+        </div>
+        <div class="about-copy">
+          <p>Blare Contractor Group exists for clients who are tired of vague timelines and vanishing supers. We keep the circle small, the communication direct, and the finish honest.</p>
+          <p>This site is the front door. More project photos, service areas, and credentials will land here as we grow the public book.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="wrap contact-panel">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Tell us what you’re building.</h2>
+          <p class="section-lede">Send the address, a few photos, and what you want fixed or built. We’ll follow up with next steps.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary btn-lg" href="mailto:blareworksllc@gmail.com?subject=Project%20inquiry%20%E2%80%94%20Blare%20Contractor%20Group">Email blareworksllc@gmail.com</a>
+          <p class="fineprint">Prefer a call? Include your number in the email and a good window to reach you.</p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <p>© <span id="y"></span> Blare Contractor Group · <a href="https://blareworks.com">blareworks.com</a></p>
+    <div class="wrap footer-grid">
+      <div>
+        <strong>BLARE</strong>
+        <p>Contractor Group</p>
+      </div>
+      <div>
+        <a href="mailto:blareworksllc@gmail.com">blareworksllc@gmail.com</a>
+        <p><a href="https://blareworks.com">blareworks.com</a></p>
+      </div>
+      <p class="copy">© <span data-year></span> Blare Contractor Group</p>
     </div>
   </footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+
+  <script src="script.js"></script>
 </body>
 </html>
