@@ -1,0 +1,99 @@
+:root {
+  --bg: #0f1210;
+  --panel: #171c18;
+  --text: #f3f5f2;
+  --muted: #a7b0a8;
+  --accent: #d4a017;
+  --line: #2a322c;
+  --max: 1040px;
+  --font: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { width: min(100% - 2rem, var(--max)); margin-inline: auto; }
+.wrap.narrow { max-width: 640px; }
+.site-header {
+  border-bottom: 1px solid var(--line);
+  position: sticky; top: 0;
+  background: rgba(15,18,16,.92);
+  backdrop-filter: blur(8px);
+}
+.site-header .wrap {
+  display: flex; align-items: center; justify-content: space-between;
+  min-height: 64px;
+}
+.logo {
+  color: var(--text);
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-decoration: none;
+}
+nav { display: flex; gap: 1.25rem; }
+nav a { color: var(--muted); text-decoration: none; font-size: .95rem; }
+nav a:hover { color: var(--text); }
+.hero { padding: 5.5rem 0 4rem; }
+.eyebrow {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  font-size: .8rem;
+  font-weight: 700;
+  margin: 0 0 .75rem;
+}
+.hero h1 {
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  line-height: 1.05;
+  margin: 0 0 1rem;
+  max-width: 12ch;
+}
+.lede {
+  color: var(--muted);
+  font-size: 1.15rem;
+  max-width: 38ch;
+  margin: 0 0 1.75rem;
+}
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #111;
+  font-weight: 700;
+  padding: .85rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.btn:hover { filter: brightness(1.05); text-decoration: none; }
+.section { padding: 3.5rem 0; }
+.section.muted { background: var(--panel); border-block: 1px solid var(--line); }
+.section h2 { margin: 0 0 1.25rem; font-size: 1.6rem; }
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.grid article {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+.grid h3 { margin: 0 0 .5rem; font-size: 1.05rem; }
+.grid p, .section p { color: var(--muted); margin: 0; }
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 1.5rem 0 2rem;
+  color: var(--muted);
+  font-size: .9rem;
+}
+@media (max-width: 640px) {
+  nav { gap: .85rem; font-size: .85rem; }
+  .hero { padding-top: 3.5rem; }
+}
