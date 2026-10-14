@@ -1,5 +1,3 @@
-# Blare Contractor Group
+# BLARE Group
 
-Public site for [blareworks.com](https://blareworks.com).
-
-Hosted on GitHub Pages from this repo (`blaregroup/blareworks`).
+Public site for [blareworks.com](https://blareworks.com), hosted with GitHub Pages.

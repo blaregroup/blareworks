@@ -1,248 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Blare Contractor Group | Built Better</title>
-  <meta name="description" content="Blare Contractor Group — residential and commercial contracting. Specialties in accent walls, baths, and kitchens. Clean installs, honest finish work." />
-  <meta property="og:title" content="Blare Contractor Group" />
-  <meta property="og:description" content="Built better." />
-  <meta property="og:url" content="https://blareworks.com/" />
-  <meta name="theme-color" content="#0c0f0d" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BLARE Group</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #fff;
+  color: #1a1a1a;
+  line-height: 1.6;
+  font-weight: 400;
+}
+header {
+  padding: 2.5rem 1.5rem 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+header h1 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: 0.4em;
+  color: #111;
+  text-transform: uppercase;
+}
+section { padding: 2rem 1.25rem; }
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease;
+}
+.card:hover { transform: translateY(-2px); }
+.card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+.card-content { padding: 1.25rem 1.5rem 1.5rem; }
+.card h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: #111;
+}
+.card p { color: #444; font-weight: 300; }
+.about {
+  background: #fafafa;
+  text-align: left;
+  padding: 3rem 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.about h2 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.about p {
+  margin: 0.75rem 0;
+  color: #333;
+  font-weight: 300;
+  text-align: left;
+}
+.cta {
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+.cta h2 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+.btn {
+  display: inline-block;
+  background: #111;
+  color: #fff;
+  padding: 1rem 2.2rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+.btn:hover { background: #333; }
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.85rem;
+  color: #888;
+  font-weight: 300;
+  border-top: 1px solid #f0f0f0;
+}
+@media (min-width: 900px) {
+  .services { flex-direction: row; flex-wrap: wrap; }
+  .card { flex: 1 1 45%; }
+  .card img { height: 220px; }
+}
+@media (min-width: 1200px) {
+  .card { flex: 1 1 22%; }
+}
+</style>
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
+<header>
+  <h1>BLARE</h1>
+</header>
 
-  <header class="site-header" id="top">
-    <div class="wrap bar">
-      <a class="brand" href="#top" aria-label="Blare Contractor Group home">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-text">
-          <strong>BLARE</strong>
-          <span>Contractor Group</span>
-        </span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
-        <span class="sr-only">Menu</span>
-        <span></span><span></span>
-      </button>
-      <nav class="site-nav" id="site-nav" data-nav>
-        <a href="#services">Services</a>
-        <a href="#process">Process</a>
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a class="nav-cta" href="#contact">Start a project</a>
-      </nav>
+<section>
+  <div class="services">
+    <div class="card">
+      <img src="accent.jpg" alt="Accent wall">
+      <div class="card-content">
+        <h2>Accent Walls</h2>
+        <p>Paneling, feature walls, or custom treatments that change the whole room.</p>
+      </div>
     </div>
-  </header>
-
-  <main id="main">
-    <section class="hero">
-      <div class="hero-grid wrap">
-        <div class="hero-copy">
-          <p class="eyebrow">Blare Contractor Group · blareworks.com</p>
-          <h1>Built <em>better.</em></h1>
-          <p class="lede">Residential and commercial contracting with a sharp eye for finish work. Our specialties are accent walls, baths, and kitchens — and we take on a lot more than that.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Email Matt</a>
-            <a class="btn btn-ghost" href="#services">What we take on</a>
-          </div>
-          <dl class="hero-stats">
-            <div>
-              <dt>Specialties</dt>
-              <dd>Walls · baths · kitchens</dd>
-            </div>
-            <div>
-              <dt>Also</dt>
-              <dd>Remodels · commercial repair</dd>
-            </div>
-            <div>
-              <dt>Contact</dt>
-              <dd><a href="mailto:matt@blareworks.com">matt@blareworks.com</a></dd>
-            </div>
-          </dl>
-        </div>
-        <aside class="hero-panel" aria-hidden="true">
-          <div class="panel-card panel-main">
-            <span class="panel-kicker">Standard</span>
-            <p>Clean installs. Honest finish. No loose ends left staring at you.</p>
-          </div>
-          <div class="panel-card panel-secondary">
-            <span>01</span>
-            <p>Walk the job before we price it</p>
-          </div>
-          <div class="panel-card panel-secondary">
-            <span>02</span>
-            <p>Build it like someone lives there</p>
-          </div>
-          <div class="panel-card panel-secondary">
-            <span>03</span>
-            <p>Leave the details actually done</p>
-          </div>
-        </aside>
+    <div class="card">
+      <img src="gameroom.jpg" alt="High tech game room">
+      <div class="card-content">
+        <h2>Game Rooms</h2>
+        <p>High-tech video game setups, multi-monitor stations, RGB lighting, and custom builds.</p>
       </div>
-    </section>
-
-    <section id="services" class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow">Services</p>
-          <h2>What we do</h2>
-          <p class="section-lede">Specialties first. Full crew capability after that.</p>
-        </div>
-        <div class="cards">
-          <article class="card">
-            <h3>Accent walls</h3>
-            <p>Feature walls that change the room — slat, fluted, media, and custom finishes with paint and trim that match.</p>
-            <ul>
-              <li>Design + install</li>
-              <li>Trim and paint closeout</li>
-              <li>High-visibility detail work</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>Baths &amp; kitchens</h3>
-            <p>Remodels and upgrades where cabinets, tile, fixtures, and finish work have to look like one plan.</p>
-            <ul>
-              <li>Full and partial remodels</li>
-              <li>Fixture and finish upgrades</li>
-              <li>Repair and refresh work</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>Commercial repair</h3>
-            <p>Offices, suites, and small business spaces that need interior repair, refresh, or finish work without a circus on site.</p>
-            <ul>
-              <li>Tenant improvements</li>
-              <li>Finish packages</li>
-              <li>Repair and punch-out</li>
-            </ul>
-          </article>
-        </div>
-        <div class="cards" style="margin-top:1rem">
-          <article class="card">
-            <h3>Beyond the specialties</h3>
-            <p>Interior renovations, finish-out, drywall and trim, paint, punch lists, and the broader residential work that comes with running jobs end to end.</p>
-            <ul>
-              <li>Remodels and interior upgrades</li>
-              <li>Finish carpentry and closeout</li>
-              <li>Takeover / incomplete jobs when needed</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>What we don’t do</h3>
-            <p>Clear lanes keep the work honest.</p>
-            <ul>
-              <li>No roofs. Ever.</li>
-              <li>Additions: not yet</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="process" class="section section-alt">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow">Process</p>
-          <h2>How we work</h2>
-          <p class="section-lede">Simple path from first look to finished space.</p>
-        </div>
-        <ol class="steps">
-          <li>
-            <h3>Walkthrough</h3>
-            <p>We look at the space, what’s working, and what needs to change.</p>
-          </li>
-          <li>
-            <h3>Scope &amp; price</h3>
-            <p>Clear line items for the real work — specialties and everything around them.</p>
-          </li>
-          <li>
-            <h3>Build</h3>
-            <p>Installs, remodels, repair, and finish work handled like the details matter.</p>
-          </li>
-          <li>
-            <h3>Handoff</h3>
-            <p>Walk it with you. Close the punch list. Leave it looking finished.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section id="work" class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow">Work</p>
-          <h2>Project types</h2>
-          <p class="section-lede">Photo gallery coming. This is the range we’re building in public.</p>
-        </div>
-        <div class="work-grid">
-          <article>
-            <h3>Accent walls &amp; feature finishes</h3>
-            <p>High-visibility installs where craft is the whole point.</p>
-          </article>
-          <article>
-            <h3>Baths &amp; kitchens</h3>
-            <p>Rooms that have to look intentional when you’re done walking through them.</p>
-          </article>
-          <article>
-            <h3>Residential interiors</h3>
-            <p>Remodels, upgrades, finish carpentry, and the work that ties a house back together.</p>
-          </article>
-          <article>
-            <h3>Commercial repair</h3>
-            <p>Interior repair and refresh for spaces that need to stay usable.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section section-alt">
-      <div class="wrap about-grid">
-        <div>
-          <p class="eyebrow">About</p>
-          <h2>Contractor group. Real finish standard.</h2>
-        </div>
-        <div class="about-copy">
-          <p>Blare Contractor Group handles residential and commercial work with specialties in accent walls, baths, and kitchens. We’re built for installs and remodels that have to look right when the tools leave.</p>
-          <p>We’re also good at closing gaps other crews leave behind — unfinished trim, open boards, punch lists that never ended. That’s part of the work, not the whole story.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact">
-      <div class="wrap contact-panel">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Tell us about the job.</h2>
-          <p class="section-lede">Send the address, a few photos, and what you want done. Matt will follow up.</p>
-        </div>
-        <div class="contact-actions">
-          <a class="btn btn-primary btn-lg" href="mailto:matt@blareworks.com?subject=Project%20inquiry%20%E2%80%94%20Blare%20Contractor%20Group">Email matt@blareworks.com</a>
-          <p class="fineprint">Prefer a call? Put your number and a good window in the email.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap footer-grid">
-      <div>
-        <strong>BLARE</strong>
-        <p>Contractor Group</p>
-      </div>
-      <div>
-        <a href="mailto:matt@blareworks.com">matt@blareworks.com</a>
-        <p><a href="https://blareworks.com">blareworks.com</a></p>
-      </div>
-      <p class="copy">© <span data-year></span> Blare Contractor Group</p>
     </div>
-  </footer>
+    <div class="card">
+      <img src="bathroom.jpg" alt="Modern bathroom remodel">
+      <div class="card-content">
+        <h2>Bathrooms</h2>
+        <p>Tile, vanities, showers, and full refreshes. Clean work, no surprises.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="kitchen.jpg" alt="Modern kitchen remodel">
+      <div class="card-content">
+        <h2>Kitchens</h2>
+        <p>Cabinets, counters, backsplashes, and layout fixes that actually make sense.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<section class="about">
+  <h2>The goal is clear</h2>
+  <p>Our vision is to make everyday life better through thoughtful improvements to the spaces people live and work in. We believe the best solutions aren't necessarily the most complicated or expensive, but the ones that make a meaningful difference in comfort, convenience, safety, and accessibility.</p>
+  <p>We prioritize quality of life over unnecessary complexity, combining practical thinking, quality craftsmanship, and purposeful innovation to create spaces that work better for the people who use them.</p>
+</section>
+
+<section class="cta">
+  <h2>Inquire</h2>
+  <p>Open for Michigan and beyond. Let me make your vision come to life.</p>
+  <a class="btn" href="mailto:matt@blareworks.com?subject=Project%20inquiry%20%E2%80%94%20BLARE">Get in Touch</a>
+</section>
+
+<footer>
+  © 2026 BLARE Group
+</footer>
 </body>
 </html>
